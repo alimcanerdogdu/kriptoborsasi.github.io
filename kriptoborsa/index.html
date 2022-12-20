@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://invaultcoins.com/assets/global/css/bootstrap.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script nonce="7db7c040-d56f-421f-906d-43749a94610f">(function(w,d){!function(eK,eL,eM,eN){eK.zarazData=eK.zarazData||{};eK.zarazData.executed=[];eK.zaraz={deferred:[],listeners:[]};eK.zaraz.q=[];eK.zaraz._f=function(eO){return function(){var eP=Array.prototype.slice.call(arguments);eK.zaraz.q.push({m:eO,a:eP})}};for(const eQ of["track","set","debug"])eK.zaraz[eQ]=eK.zaraz._f(eQ);eK.zaraz.init=()=>{var eR=eL.getElementsByTagName(eN)[0],eS=eL.createElement(eN),eT=eL.getElementsByTagName("title")[0];eT&&(eK.zarazData.t=eL.getElementsByTagName("title")[0].text);eK.zarazData.x=Math.random();eK.zarazData.w=eK.screen.width;eK.zarazData.h=eK.screen.height;eK.zarazData.j=eK.innerHeight;eK.zarazData.e=eK.innerWidth;eK.zarazData.l=eK.location.href;eK.zarazData.r=eL.referrer;eK.zarazData.k=eK.screen.colorDepth;eK.zarazData.n=eL.characterSet;eK.zarazData.o=(new Date).getTimezoneOffset();if(eK.dataLayer)for(const eX of Object.entries(Object.entries(dataLayer).reduce(((eY,eZ)=>({...eY[1],...eZ[1]})))))zaraz.set(eX[0],eX[1],{scope:"page"});eK.zarazData.q=[];for(;eK.zaraz.q.length;){const e_=eK.zaraz.q.shift();eK.zarazData.q.push(e_)}eS.defer=!0;for(const fa of[localStorage,sessionStorage])Object.keys(fa||{}).filter((fc=>fc.startsWith("_zaraz_"))).forEach((fb=>{try{eK.zarazData["z_"+fb.slice(7)]=JSON.parse(fa.getItem(fb))}catch{eK.zarazData["z_"+fb.slice(7)]=fa.getItem(fb)}}));eS.referrerPolicy="origin";eS.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(eK.zarazData)));eR.parentNode.insertBefore(eS,eR)};["complete","interactive"].includes(eL.readyState)?zaraz.init():eK.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,0,"script");})(window,document);</script>
+</head>
+   <style>
+    body{
+        background-color: whitesmoke;
+    }
+    .login{
+        font-weight: bold;
+        border: 2px;
+        border-radius: 12px;
+    }
+    .link{
+      margin-right: 120px;
+        
+    }
+    .bg{
+        width: 1440px;
+        height: 700px;
+        background-image: url(/Users/alimcanerdogdu/Downloads/bt.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .maintext{
+        color: black;
+        padding-top: 240px;
+        padding-left: 50px;
+       float: left;
+        font-weight: 100;
+        font: 1em sans-serif;
+    }
+    .alsat{
+        
+        color: black;
+       
+        
+        
+        border: 5px double;
+        width: 600px;
+        height: 500px;
+    }
+    .form{
+       
+       
+        margin-top: 100px;
+        margin-right: 40px;
+        float: right;
+    }
+    .option{
+        color: white;
+        background-color: darkgray;
+        width: 400px;
+        height: 40px;
+        margin-left: 100px;
+        margin-bottom: 3px;
+       
+        
+        
+    }
+   .offersbutton{
+    width: 300px;
+    height: 40px;
+    background-color: rgb(0, 145, 255);
+    color: black;
+    border-radius: 12px;
+    margin-left: 150px;
+   }
+  .info{
+    margin-top: 0px;
+    background-image: url(/Users/alimcanerdogdu/Downloads/bcg.jpeg);
+    background-repeat: no-repeat;
+        background-size: cover;
+    
+  }
+  .why-choose-section .section-header {
+    margin-bottom: 90px;
+}
+
+.why-choose-section .mb-30 {
+    margin-bottom: 65px;
+}
+
+.choose-card {
+    padding: 10px 30px 30px 50px;
+    text-align: center;
+    background-color: #041838;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 8px;
+    border: 2px solid #fca120;
+    height: 100%;
+}
+
+
+.choose-card:hover {
+    box-shadow: 0 5px 10px #fca120;
+    -webkit-transform: translateY(-10px);
+    -ms-transform: translateY(-10px);
+    transform: translateY(-10px);
+}
+
+.choose-card__icon {
+    width: 90px;
+    height: 90px;
+    background-color: #fca120;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    margin-top: -45px;
+}
+  .choose-card__content .title {
+    color: #fff;
+    font-size: 24px;
+}
+
+.choose-card__content p {
+    color: rgba(255, 255, 255, 0.85);
+}
+#mailcolor{
+    color: white;
+}
+
+        .buy{
+            background-image: url(/Users/alimcanerdogdu/Downloads/c.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .middleimg{
+            background-image: url(/Users/alimcanerdogdu/Desktop/z.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1440px;
+            height: 400px;
+        }
+        summary {
+
+background-color:gray;
+color:white;
+font-size:24px;
+border-radius: 5px;
+width: 550px;
+height: 60px;
+
+
+
+
+
+
+}
+
+
+details {
+
+background-color: white;
+color:black;
+font-size:18px;
+border-radius: 5px;
+width: 500px;
+margin: auto;
+margin-top: 50px;
+margin-left: 150px;
+float: left;
+
+}
+.ft{
+    background-image: url(/Users/alimcanerdogdu/Downloads/ft.webp);
+    background-repeat: no-repeat;
+        background-size: cover;
+    width: 1440px;
+    height: 700px;
+
+}
+.navbarmenu{
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    color: #888;
+}
+    
+   </style>
+</head>
+<body>
+    <nav class="navbar navbar-light" style="background-color: rgba(255, 255, 255, 0.666);">
+        <a class="navbar-brand" style="background-color: #888; border-radius: 12px; padding:2px;" href="#">
+          <img src="/Users/alimcanerdogdu/Downloads/5717.png" width="30" height="30" alt="">
+              A.C.E CRYPTO CURRENCY
+        </a> 
+        <div class="link">
+            <a  class="navbarmenu" href="index.html">Anasayfa</a>
+            <a class="navbarmenu" href="buy.html">Al</a>
+            <a class="navbarmenu" href="sell.html"> Sat</a>
+        </div>
+        <div>
+        <a href="login.html"> <input class="login" type="button" style="background-color: green;" value="Giriş Yap"></a>
+         <input class="login"   type="button" value="Kayıt Ol">
+        </div>
+      </nav>
+      <div class="bg">
+           <div class="maintext">
+          <h2>KRİPTO PARA BİRİMLERİNİZİ <br> DÖNÜŞTÜRÜN</h2>
+          <p>ACECoins, insanların doğrudan birbirleriyle kripto ticareti yapabileceği <br> bir p2p kripto borsası pazarıdır.</p>
+             </div>
+            <div class="form">
+            <table class="alsat">
+                <tr>
+                    <td>
+                    <h3 style="margin-left: 200px ; color: rgb(0, 145, 255)">TEKLİF ALIN</h3>
+                   </td>
+                   
+                    </tr>
+                        
+                     
+                     <tr>
+                      
+                       <td>
+                       <select class="option">
+                        <option value="">AL veya Sat</option>
+                        <option value="AL">AL</option>
+                        <option value="Sat">SAT</option>
+                    </select>
+                </td>
+                    </tr>
+
+                    <tr>
+                        
+                        <td>
+                        <select class="option">
+                         <option value="">Ödeme Yöntemi Seçin</option>
+                         <option value="">BANKA HAVALESİ</option>
+                         <option value="">KRİPTO TRANSFERİ</option>
+                     </select>
+                 </td>
+                     </tr>
+                
+                     
+                     <tr>
+
+                        <td>
+                        <select class="option">
+                         <option value="">Coin Seçiniz</option>
+                         <option value="BTC">BTC</option>
+                         <option value="ETH">ETH</option>
+                         <option value="XRP">XRP</option>
+                         <option value="LTC">LTC</option>
+                     </select>
+                 </td>
+                     </tr>
+                       <tr>
+                        <td>
+                     <input class="offersbutton" type="button" value="Teklif Al" onclick="window.location.href='buy.html'">
+                    </td>
+                         </tr>
+                    
+                    
+                  
+                   
+                  
+                
+               
+            </table>  
+        
+            </div>
+
+        
+        
+        </div>
+             
+       
+<div class="middleimg">
+
+</div>
+
+      
+
+<iframe src="https://www.genelpara.com/embed/?symbol=kripto&kripto=BTC,ETH,XRP,BCH,LTC&stil=stil-6&renk=beyaz"
+ frameborder="0" width="1440" height="250"></iframe>
+
+
+        
+   
+
+
+ <section class="info" >
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section-header text-center">
+            <h2 class="section-title text-white">NEDEN BİZ</h2>
+            <p class="text-white">Müşterilerimizin güvenini kazanmak her zaman en büyük önceliğimiz olmuştur. Bu güveni sektördeki en iyi güvenlik sayesinde kazanıyoruz. Platformumuz birinci sınıf finansal istikrar ve en yüksek yasal uyumluluk standartlarını sağlar.</p>
+          </div>
+        </div>
+      </div><!-- row end -->
+      <div class="row mb-none-50">
+                    <div class="col-lg-4 col-md-6 mb-30">
+                <div class="choose-card">
+                    <div class="choose-card__icon">
+                        <img src="https://invaultcoins.com/assets/images/frontend/choose_us/62b6ac0a5f1451656138762.png" alt="image">
+                    </div>
+                    <div class="choose-card__content">
+                        <h5 class="title mb-3">YASAL ŞİRKET</h5>
+                        <p>Şirketimiz kesinlikle yasal faaliyetler yürütmektedir. Bu işi yürütmek için sertifikalıyız, yasal ve güvenliyiz.</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-md-6 mb-30">
+                <div class="choose-card">
+                    <div class="choose-card__icon">
+                        <img src="https://invaultcoins.com/assets/images/frontend/choose_us/62b6abf67c9fb1656138742.png" alt="image">
+                    </div>
+                    <div class="choose-card__content">
+                        <h5 class="title mb-3">YÜKSEK GÜVENİRLİK</h5>
+                        <p>Çok sayıda insan bize güveniyor. Güvenlik sistemimizin seviyesini iyileştirmek ve olası riskleri en aza indirmek için sürekli çalışıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-md-6 mb-30">
+                <div class="choose-card">
+                    <div class="choose-card__icon">
+                        <img src="https://invaultcoins.com/assets/images/frontend/choose_us/62b6abe6245c91656138726.png" alt="image">
+                    </div>
+                    <div class="choose-card__content">
+                        <h5 class="title mb-3">
+                          ONLİNE BİTCOİN SAT </h5>
+                        <p>Satış işlemi de basittir! Bitcoin'inizi seçtiğiniz oranda satın ve sayısız ödeme yönteminden biriyle ödeme alın.</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-md-6 mb-30">
+                <div class="choose-card">
+                    <div class="choose-card__icon">
+                        <img src="https://invaultcoins.com/assets/images/frontend/choose_us/62b6abbdd734e1656138685.png" alt="image">
+                    </div>
+                    <div class="choose-card__content">
+                        <h5 class="title mb-3"> EK GELİR ELDE EDİN</h5>
+                        <p>
+                            Bitcoin'inizi seçtiğiniz oranda satın alın ve satın ve bu siteden daha fazla kar elde etmek için tüm kullanımlar için harika bir fırsat.</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-md-6 mb-30">
+                <div class="choose-card">
+                    <div class="choose-card__icon">
+                        <img src="https://invaultcoins.com/assets/images/frontend/choose_us/62b6aba84854d1656138664.png" alt="image">
+                    </div>
+                    <div class="choose-card__content">
+                        <h5 class="title mb-3">ONLİNE BİTCOİN AL</h5>
+                        <p>Bu site ile satın alma işlemi çok basit. Hesaba giriş yapın ve talebe göre herhangi bir bitcoin paketini satın alın.</p>
+                    </div>
+                </div>
+            </div>
+                    <div class="col-lg-4 col-md-6 mb-30">
+                <div class="choose-card">
+                    <div class="choose-card__icon">
+                        <img src="https://invaultcoins.com/assets/images/frontend/choose_us/62b6ab4f5ed201656138575.png" alt="image">
+                    </div>
+                    <div class="choose-card__content">
+                        <h5 class="title mb-3">HIZLI ERİŞİM</h5>
+                        <p>En güvenilir ve erişimi kolay bir sitedir. Tüm kullanıcılar için çok basit bir oturum açma süreci ve kolay yapılandırma sağlıyoruz.</p>
+                    </div>
+                </div>
+            </div>
+              </div>
+    </div>
+  </section>
+   
+  <div style="background-color: white; height: 650px;" >
+    <div style="text-align: center;">
+    <h1>Sıkça sorulan Sorular</h1>
+    <p>Platformumuzla ilgili Sıkça Sorulan Sorularınızın bazılarını yanıtlıyoruz. <br>
+        Burada cevaplanmayan bir sorunuz varsa, lütfen bize posta yoluyla ulaşın.</p>
+    </div>
+    <details> 
+
+		<summary>Bitcoin Nedir?</summary> 
+
+
+		<p>Bitcoin, yeni bir ödeme sistemi ve tamamen dijital para sağlayan bir fikir birliği ağıdır.<br>
+            Merkezi bir otorite veya aracı olmaksızın kullanıcıları tarafından desteklenen ilk merkezi olmayan eşler arası ödeme ağıdır. Kullanıcı açısından bakıldığında, Bitcoin,
+             İnternet için hemen hemen nakit para gibidir.
+             Bitcoin, var olan en belirgin üçlü girişli defter tutma sistemi olarak da görülebilir.</p> 
+	</details>
+    <details> 
+
+        <summary>Nasıl Bitcoin Alırım?</summary> 
+
+
+        <p>Bir BITCCA satıcısı olarak Bitcoin satın almak artık çok kolay. Kendi oranlarınızı seçme özgürlüğüne sahipsiniz. BITCCA eşler arası bir pazar olduğundan, Bitcoin'inizi dünya çapında 3 milyondan fazla kullanıcıdan doğrudan satın alabilirsiniz.</p> 
+    </details>
+    <details> 
+
+        <summary>Nasıl Bitcoin Satarım?</summary> 
+
+
+        <p>Bir BITCCA satıcısı olarak Bitcoin satmak artık çok kolay. Kendi oranlarınızı belirleme özgürlüğüne ve ayrıca sattığınız Bitcoin için ödeme almak için 20'den fazla ödeme seçeneğinin lüksüne sahipsiniz. BITCCA eşler arası bir pazar olduğundan, Bitcoin'inizi dünya çapında 3 milyondan fazla kullanıcıya doğrudan satabilirsiniz.</p> 
+    </details>
+    <details> 
+
+        <summary>Çevrimiçi Para Dönüştürme Nedir?</summary> 
+
+
+        <p>Çevrimiçi döviz değişimi veya elektronik forex değişimi, ülkeler arasında para alışverişini kolaylaştıran internet tabanlı bir platformdur. Fiziksel muadilleri gibi, çevrimiçi döviz borsaları da nominal bir ücret talep ederek ve/veya bir para birimindeki alış-satış marjı yoluyla para kazanır.</p> 
+    </details>
+    <details> 
+
+        <summary>Nasıl Para Kazanırım?</summary> 
+
+
+        <p>Bir kripto para alın ve aldığınızdan fazla bir fiyata satın bu sayede kar etmiş olursunuz.</p> 
+    </details>
+    <details> 
+
+        <summary>Nasıl Transfer Yapabilirim?</summary> 
+
+
+        <p>Transfer etmek istediğiniz coini seçip hangi cüzdana trasfer etmek istiyorsanız o cüzdanın adresini yazın ve miktarı seçin ardından işlemi onaylayın ve transferi gerçekleştirin.</p> 
+    </details>
+
+    
+  </div>
+  <footer class="ft">
+        
+    <section class="ftco-section">
+        <div class="container">
+        <div class="row justify-content-center">
+        <div class="col-md-6 text-center mb-5">
+        <h2 class="heading-section" id="mailcolor">A.C.E CRYPTO COMP</h2>
+        </div>
+        </div>
+        <div class="row justify-content-center">
+        <div class="col-lg-10 col-md-12">
+        <div class="wrapper">
+        <div class="row no-gutters">
+        <div class="col-md-7 d-flex align-items-stretch">
+        <div class="contact-wrap w-100 p-md-5 p-4">
+        <h3 style="color: white; text-align: center;" >İletişime Geç</h3>
+        <div id="form-message-warning" class="mb-4"></div>
+        <div id="form-message-success" class="mb-4">
+        
+        </div>
+        <form method="POST" id="contactForm" name="contactForm">
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+        <input type="text" class="form-control" name="name" id="name" placeholder="İsim" required>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+        <input type="email" class="form-control" name="email" id="email" placeholder="Email"  required>
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+        <input type="text" class="form-control" name="subject" id="subject" placeholder="Konu"  required>
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+        <textarea name="message" class="form-control" id="message" cols="30" rows="7" placeholder="Mesaj"  required></textarea>
+        </div>
+        </div>
+        <div class="col-md-12">
+        <div class="form-group">
+        <input type="submit" value="Mesaj Gönder" class="btn btn-primary">
+        <div class="submitting"></div>
+        </div>
+        </div>
+        </div>
+        </form>
+        </div>
+        </div>
+        <div class="col-md-5 d-flex align-items-stretch">
+        <div class="info-wrap bg-primary w-100 p-lg-5 p-4">
+        <h3 class="mb-4 mt-md-4" style="text-align: center;" id="mailcolor" >BİZE ULAŞIN</h3>
+        <div class="dbox w-100 d-flex align-items-start">
+        <div class="icon d-flex align-items-center justify-content-center" id="mailcolor">
+        <span class="fa fa-map-marker"></span>
+        </div>
+        <div class="text pl-3" id="mailcolor">
+        <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
+        </div>
+        </div>
+        <div class="dbox w-100 d-flex align-items-center">
+        <div class="icon d-flex align-items-center justify-content-center" id="mailcolor">
+        <span class="fa fa-phone"></span>
+        </div>
+        <div class="text pl-3" id="mailcolor">
+        <p><span>Phone:</span> <a href="tel://1234567920" id="mailcolor">+90(541)554 50 12</a></p>
+        </div>
+        </div>
+        <div class="dbox w-100 d-flex align-items-center">
+        <div class="icon d-flex align-items-center justify-content-center" id="mailcolor">
+        <span class="fa fa-paper-plane"></span>
+        </div>
+        <div class="text pl-3 " id="mailcolor">
+        <p ><span >Email:</span> <a href="https://mailto:alimcan145@hotmail.com"></a>alimcan145@hotmail.com</span></p>
+        </div>
+        </div>
+        <div class="dbox w-100 d-flex align-items-center">
+        <div class="icon d-flex align-items-center justify-content-center" id="mailcolor">
+        <span class="fa fa-globe"></span>
+        </div>
+        <div class="text pl-3" id="mailcolor">
+        <p ><span>Website:</span> <a href="#" id="mailcolor" >www.acecoin.com</a></p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </section>
+        <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.min.js"></script>
+<script src="js/popper.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/main.js"></script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon='{"rayId":"77c1e6481a320550","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2022.11.3","si":100}' crossorigin="anonymous"></script>
+</body>
+
+
+</html>
