@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tanıtım Sayfası</title>
+    </head>
+    <style>
+        .navbar{
+            padding: 20px;
+            width: auto;
+            height: 100px;
+            background-color: #888;
+            text-align: center;
+            color: white;
+        
+        }
+        .div1{
+            width: auto;
+            height: max-content;
+            background-color: #888;
+            text-align: center;
+            color: white;
+        }
+        .button{
+            background-color: aqua;
+            height: 30px;
+            border-radius: 12px;
+            border: 2px;
+            margin-bottom: 5px;
+        }
+        h5{
+            color: blue;
+        }
+    </style>
+    <body>
+        <div class="navbar">
+            
+ <h1>KRİPTO BORSASI ARAYÜZÜ TANITIM SAYFASI</h1>
+ <p>ALİM CAN ERDOĞDU<br>21430070019</p>
+        </div>
+
+        <div class="div1">
+            <h2>Kripto Borsası Uygulaması</h2>
+            <p> Kripto Borsası projem anlık olarak coinlerinin değerlerini göstermekte olup bir borsa arayüzü tasarımı şeklindedir.<br>
+            Projemin anasayfasına gitmek için aşağıdaki butona tıklayabilir yada linkten githubdaki projeme ulaşabilirsiniz <br>
+        <a href="">GİTHUB LİNKİNİ BURAYA KOY</a> </p>
+        <a href="index.html" ><input  class="button" type="button" value="Proje Sayfasın Geçmek İçin Tıklayın" ></a>
+        </div>
+        <div class="div1">
+
+            <h2>PHP Kurulumu ve Çalıştırma</h2>
+            <p>Kendi bilgisayarımızda çalışmalar yapabilmek için İçerisinde 
+            Apache, Php ve MySQL programlarını barındıran Paket programlarından bir tanesini kurmak gerekiyor ben macOS işletim sistemi kullandığım için MAMMP isimli
+            programı tercih ettim eğer windows kullanıcısıysanız XAMPP da kullanabilirsiniz.</p>
+            <img src="/Users/alimcanerdogdu/Desktop/mamp.png">
+            <img src="/Users/alimcanerdogdu/Desktop/mampport.png">
+            <p>Buradan port ayarlarımızı yapıp vs code'dan launch.json klasöründeki port ayarlarıyla aynı olduğuna emin oluyoruz. </p>
+            <img src="/Users/alimcanerdogdu/Desktop/forport.png">
+
+        </div>
+
+        <div class="div1">
+            <h2>Nasıl Çalıştırılır Videosu</h2>
+
+            <video  style="width: 1200px; height: 900px;" controls>
+                <source type="video/mp4" src="/Users/alimcanerdogdu/Desktop/video.mov">
+            </video>
+        </div>
+        <div class="div1">
+            <h2>Php ile servere bağlanabilmek için bir php dosyası açıp aşağıdaki kodları yazıyoruz.</h2>
+            <img src="/Users/alimcanerdogdu/Desktop/kkphp.png">
+            <p>Servere bağlantımızın başarılı olup olmadığını if koşuluyla kontrol ediyoruz.</p>
+        </div>
+
+        <div class="div1">
+
+            <h2>PHP ile Giriş işlemi</h2>
+            <p>Servere bağlandıktan sonra sitemizin anasayfasıyla karşılaşıyoruz.Buradan giriş yapmak için sağ üstteki "Giriş Yap"
+                butonun tıkladığımızda giriş formunu görüyoruz. </p>
+                <img style="width:800px; height:500px;" src="/Users/alimcanerdogdu/Desktop/anasayfa.png">
+                <p>Ardından bizi login sayfamız karşılıyor.</p>
+                <img style="width:800px; height:500px;" src="/Users/alimcanerdogdu/Desktop/login.png">
+
+               <h3>Başarılı bir şekilde giriş yapabilmek için php kodlarımızı kullanıp serverlerla eşleşme yapıyoruz.</h3>
+               <img src="/Users/alimcanerdogdu/Desktop/phplog.png">
+
+               <h3>Kodların Açıklaması</h3>
+               <p><h5>session_start();</h5> ile kodları başlatıp <h5>include("inc/vt.php");</h5> ile veri tabanına bağlanıyoruz.</p>
+               <p>Eğer mevcut oturum varsa if içinde <h5>($_SESSION["Oturum"]</h5> komutu yardımıyla kontrolü yapıp  <h5>header("location:index.php");</h5>
+                komutuyla anasayfamıza yönlendiriyoruz.
+               </p>
+               <p>Kullanıcı adlarını çekmek için <h5>$sorgu = $baglanti->query("select kadi from kullanicilar");</h5> sorgusunu kullanıyoruz</p>
+               <p>While döngüsü yardımıyla kullanıcı isimlerini veritabanından tek tek kontrol ettiriyoruz.</p>
+               <p>Sonrasında açtığımız if komutuyla kullanıcı adı ve parola doldurulmuşmu kontrolnü yapıyoruz.</p>
+
+        </div>
+        <div class="div1">
+            <h2>Anasayfayı Oluştururken Kullandığım Araçlar</h2>
+             <p>İlk olarak sayfama bir navbar yapıp sol tarafına logo yerleştirdim. Merkez kısmına anasayfa,alım ve satım sayfasına yönlendirmek
+                üzere 3 adet link koydum.Giriş ve kayıt sekmesine erişebilmesi için sağ köşeye iki adet buton yapıp tüm bunları css ile düzenledim.
+             </p>
+              <img style="width:800px; height:500px;"  src="/Users/alimcanerdogdu/Desktop/navbar.png">
+              <img style="width: 1240px; height:100px;" src="/Users/alimcanerdogdu/Desktop/resimnavbar.png">
+        </div>
+
+         <div class="div1">
+            <H2>Kripto Varlıkların Anlık değerlerini Almak</H2>
+            <p>Kripto varlıkların anlık değişen değerleniri almak için bir api kullanıp iframe etiketi ile siteme verilerini çektim.
+                <h5>  iframe src="https://www.genelpara.com/embed/?symbol=kripto&kripto=BTC,ETH,XRP,BCH,LTC&stil=stil-6&renk=beyaz"
+                    frameborder="0" width="1440" height="250"></iframe
+                   </h5>
+            </p>
+            <img style="width: 1200px; height: 400px;" src="/Users/alimcanerdogdu/Desktop/coin.png">
+
+         </div>
+
+         <div class="div1">
+
+            <h2>JavaScript Kullanarak Bilgi Bölümü </h2>
+             <h5>
+                function whichTransitionEvent(){
+                    var t,
+                        el = document.createElement("fakeelement");
+                  
+                    var transitions = {
+                      "transition"      : "transitionend",
+                      "OTransition"     : "oTransitionEnd",
+                      "MozTransition"   : "transitionend",
+                      "WebkitTransition": "webkitTransitionEnd"
+                    }
+                  
+                    for (t in transitions){
+                      if (el.style[t] !== undefined){
+                        return transitions[t];
+                      }
+                    }
+                  }
+                  
+                  
+             </h5>
+             <p>JavaScript kodları ve aşağıdaki html kodlarını kullanıp hareketli bir card tasarımı yaptım.</p>
+             <img  style="width: 1000px; height: 400px;" src="/Users/alimcanerdogdu/Desktop/card.png">
+             <p>GÖRÜNÜM:</p>
+             <img style="width: 1000px; height:600px;" src="/Users/alimcanerdogdu/Desktop/info.png">
+        
+         </div>
+    </body>
+</html>
